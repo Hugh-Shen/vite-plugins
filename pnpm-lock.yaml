@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@rollup/pluginutils':
-        specifier: ^5.1.4
-        version: 5.1.4(rollup@4.39.0)
-      magic-string:
-        specifier: ^0.30.17
-        version: 0.30.17
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
@@ -31,7 +25,20 @@ importers:
         specifier: ^5.2.1
         version: 5.2.3(vite@6.2.6)(vue@3.5.13(typescript@5.8.3))
 
-  packages/inject-before-create: {}
+  packages/inject-before-create:
+    dependencies:
+      '@rollup/pluginutils':
+        specifier: ^5.1.4
+        version: 5.1.4(rollup@4.39.0)
+      magic-string:
+        specifier: ^0.30.17
+        version: 0.30.17
+      vite:
+        specifier: ^4.0.0 || ^5.0.0 || ^6.0.0
+        version: 6.2.6
+      vue:
+        specifier: ^2.7.0 || ^3.0.0
+        version: 3.5.13(typescript@5.8.3)
 
   packages/transform-image: {}
 
