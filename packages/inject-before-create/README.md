@@ -10,6 +10,7 @@ npm install @vite-plugins/inject-before-create --save-dev
 yarn add @vite-plugins/inject-before-create -D
 # 或
 pnpm add @vite-plugins/inject-before-create -D
+```
 
 ## 如何使用
 ```javascript
