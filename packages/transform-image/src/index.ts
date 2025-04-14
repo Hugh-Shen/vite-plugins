@@ -71,7 +71,7 @@ export default function transformImage (options?: ImageOptions): Plugin {
       })
     
       return {
-        code: s.toString(),  // 修正字段名
+        code: s.toString(),
         map: s.generateMap()
       }
     }
