@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@vite-plugins/transform-image": "workspace:*",
     "@vitejs/plugin-vue": "^5.2.1"
   }
 }

@@ -1,13 +1,22 @@
 {
-  "name": "vite-plugins",
+  "name": "@vite-plugins/transform-image",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.5.0"
+  "packageManager": "pnpm@10.5.0",
+  "peerDependencies": {
+    "vite": "^4.0.0 || ^5.0.0 || ^6.0.0",
+    "vue": "^2.7.0 || ^3.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.1.4",
+    "magic-string": "^0.30.17"
+  }
 }

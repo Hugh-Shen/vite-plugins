@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -C packages/inject-before-create build"
+    "dev": "pnpm -C example dev",
+    "build": "pnpm -C packages/transform-image build"
   },
   "keywords": [],
   "author": "",

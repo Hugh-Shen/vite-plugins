@@ -19,12 +19,6 @@ importers:
         specifier: ^6.2.6
         version: 6.2.6
 
-  example:
-    devDependencies:
-      '@vitejs/plugin-vue':
-        specifier: ^5.2.1
-        version: 5.2.3(vite@6.2.6)(vue@3.5.13(typescript@5.8.3))
-
   packages/inject-before-create:
     dependencies:
       '@rollup/pluginutils':
@@ -40,7 +34,20 @@ importers:
         specifier: ^2.7.0 || ^3.0.0
         version: 3.5.13(typescript@5.8.3)
 
-  packages/transform-image: {}
+  packages/transform-image:
+    dependencies:
+      '@rollup/pluginutils':
+        specifier: ^5.1.4
+        version: 5.1.4(rollup@4.39.0)
+      magic-string:
+        specifier: ^0.30.17
+        version: 0.30.17
+      vite:
+        specifier: ^4.0.0 || ^5.0.0 || ^6.0.0
+        version: 6.2.6
+      vue:
+        specifier: ^2.7.0 || ^3.0.0
+        version: 3.5.13(typescript@5.8.3)
 
 packages:
 
@@ -325,13 +332,6 @@ packages:
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
-
-  '@vitejs/plugin-vue@5.2.3':
-    resolution: {integrity: sha512-IYSLEQj4LgZZuoVpdSUCw3dIynTWQgPlaRP6iAvMle4My0HdYwr5g5wQAfwOeHQBmYwEkqF70nRpSilr6PoUDg==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    peerDependencies:
-      vite: ^5.0.0 || ^6.0.0
-      vue: ^3.2.25
 
   '@vue/compiler-core@3.5.13':
     resolution: {integrity: sha512-oOdAkwqUfW1WqpwSYJce06wvt6HljgY3fGeM9NcVA1HaYOij3mZG9Rkysn0OHuyUAGMbEbARIpsG+LPVlBJ5/Q==}
@@ -624,11 +624,6 @@ snapshots:
     optional: true
 
   '@types/estree@1.0.7': {}
-
-  '@vitejs/plugin-vue@5.2.3(vite@6.2.6)(vue@3.5.13(typescript@5.8.3))':
-    dependencies:
-      vite: 6.2.6
-      vue: 3.5.13(typescript@5.8.3)
 
   '@vue/compiler-core@3.5.13':
     dependencies:
